@@ -83,9 +83,11 @@
             // TxtNome
             // 
             this.TxtNome.Location = new System.Drawing.Point(69, 22);
+            this.TxtNome.MaxLength = 15;
             this.TxtNome.Name = "TxtNome";
             this.TxtNome.Size = new System.Drawing.Size(100, 20);
             this.TxtNome.TabIndex = 1;
+            this.TxtNome.TextChanged += new System.EventHandler(this.TxtNome_TextChanged);
             // 
             // label2
             // 
@@ -99,6 +101,7 @@
             // TxtSobrenome
             // 
             this.TxtSobrenome.Location = new System.Drawing.Point(69, 48);
+            this.TxtSobrenome.MaxLength = 15;
             this.TxtSobrenome.Name = "TxtSobrenome";
             this.TxtSobrenome.Size = new System.Drawing.Size(100, 20);
             this.TxtSobrenome.TabIndex = 2;
@@ -128,7 +131,6 @@
             this.groupBox2.Size = new System.Drawing.Size(374, 100);
             this.groupBox2.TabIndex = 9;
             this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "--";
             // 
             // BtnCancelar
             // 
@@ -153,6 +155,7 @@
             // txtRep
             // 
             this.txtRep.Location = new System.Drawing.Point(86, 71);
+            this.txtRep.MaxLength = 20;
             this.txtRep.Name = "txtRep";
             this.txtRep.Size = new System.Drawing.Size(133, 20);
             this.txtRep.TabIndex = 8;
@@ -169,6 +172,7 @@
             // TxtSenha
             // 
             this.TxtSenha.Location = new System.Drawing.Point(86, 45);
+            this.TxtSenha.MaxLength = 20;
             this.TxtSenha.Name = "TxtSenha";
             this.TxtSenha.Size = new System.Drawing.Size(133, 20);
             this.TxtSenha.TabIndex = 7;
@@ -229,6 +233,7 @@
             // txtEmail
             // 
             this.txtEmail.Location = new System.Drawing.Point(86, 19);
+            this.txtEmail.MaxLength = 30;
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(162, 20);
             this.txtEmail.TabIndex = 6;
@@ -244,6 +249,7 @@
             // 
             // cmbGenêro
             // 
+            this.cmbGenêro.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbGenêro.FormattingEnabled = true;
             this.cmbGenêro.Items.AddRange(new object[] {
             "Masculino(a)",
@@ -265,6 +271,7 @@
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox1);
+            this.KeyPreview = true;
             this.Name = "Form1";
             this.Text = "Form1";
             this.groupBox1.ResumeLayout(false);

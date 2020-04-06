@@ -53,5 +53,10 @@ namespace Cadastro_de_Login
                             ", Genêro: " + genero +
                             ", Senha: " + senha);
         }
+
+        private void TxtNome_TextChanged(object sender, EventArgs e)
+        {
+           
+        }
     }
 }
